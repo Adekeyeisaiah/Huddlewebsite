@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Huddle Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #dfe0e5;
+      color: #333;
+    }
+
+    header, section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    .hero-background{
+      background: url('bg-hero-desktop.svg') no-repeat top center;
+        background-size: cover;
+          padding: 10px 0;
+    }
+
+    .cta-btn {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .btn-pink {
+      background-color: #ff52bf;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .hero img {
+      max-width: 100%;
+      width: 400px;
+    }
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+      padding: 40px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .card img {
+      width: 300px;
+      max-width: 100%;
+    }
+
+    .card-text {
+      max-width: 500px;
+    }
+
+    footer {
+      background-color: #193a42;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    footer img {
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 6px 0;
+    }
+  
+  .foot-img{
+    display:block;
+    margin:20px;
+  }
+
+  .foot img{
+    height: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .foot-con{
+    display:flex;
+    flex-direction:column;
+    padding: 20px;
+  }
+
+  .footer-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0px auto;
+  }
+  
+    .bottom-cta {
+      text-align: center;
+      margin: 60px auto;
+      background: white;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    }
+
+    div a{
+      margin: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-background">
+  <header>
+   <img src="logo.svg" alt="logo">
+    <button class="cta-btn">Try It Free</button></>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>Huddle re-imagines the way we build communities. Create genuine discussion and connect with your audience.</p>
+      <button class="btn-pink">Get Started For Free</button>
+    </div>
+    <img src="illustration-mockups.svg" alt="hero image">
+  </section>
+  </div>
+
+  <section class="card">
+    <div class="card-text">
+      <h2>Grow Together</h2>
+      <p>Generate meaningful discussions with your audience and build a strong, loyal community.</p>
+    </div>
+    <img src="illustration-grow-together.svg" alt="Grow Together">
+  </section>
+
+  <section class="card">
+    <div class="card-text">
+      <h2>Flowing Conversations</h2>
+      <p>Our threads have just-in-time loading for a more natural flow of conversation.</p>
+    </div>
+    <img src="illustration-flowing-conversation.svg" alt="Flowing Conversations">
+  </section>
+
+  <section class="card">
+    <div class="card-text">
+      <h2>Your Users</h2>
+      <p>It takes no time at all to integrate Huddle with your app’s authentication solution.</p>
+    </div>
+    <img src="illustration-your-users.svg" alt="Your Users">
+  </section>
+
+  <section class="bottom-cta">
+    <h2>Ready To Build Your Community?</h2>
+    <button class="btn-pink">Get Started For Free</button>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+    <div class="foot-img">
+      <img src="logo2.svg" alt="logo">
+    </div>
+    <div class="foot-con">
+    <div class="foot">
+      <img src="icon-location.svg" alt="location">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="foot">
+      <img src="icon-phone.svg" alt="phone">
+      <p>+1-543-123-4567</p>
+    </div>
+    <div class="foot">
+      <img src="icon-email.svg" alt="email">
+      <p>example@huddle.com</p>
+    </div>
+    </div>
+    <div>
+      <a href="#">About Us</a>
+      <a href="#">What We Do</a>
+      <a href="#">FAQ</a>
+      <a href="#">Career</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact Us</a>
+    </div>
+    </div>
+  </footer>
+
+</body>
+</html>
