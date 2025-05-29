@@ -29,7 +29,7 @@
     }
 
     .hero-background{
-      background: url('./Images/bg-hero-desktop.svg') no-repeat top center;
+      background: url('bg-hero-desktop.svg') no-repeat top center;
         background-size: cover;
           padding: 10px 0;
     }
@@ -48,6 +48,9 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
     }
 
     .hero-text {
@@ -78,9 +81,12 @@
       border-radius: 12px;
       box-shadow: 0 2px 15px rgba(0,0,0,0.05);
       padding: 40px;
-      margin: 30px auto;
       width: 90%;
       max-width: 1000px;
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      gap: 40px;
     }
 
     .card img {
@@ -112,7 +118,7 @@
   
   .foot-img{
     display:block;
-    margin:10px;
+    margin:20px;
   }
 
   .foot img{
@@ -146,19 +152,71 @@
     div a{
       margin: 30px;
     }
+  
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+  }
 
-    .design{
-      text-align:center;
-      color:red;
-    }
+  .card img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+  }
+
+  .section {
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .bottom-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+  
+  .btn-pink,
+.cta-btn {
+  padding: 14px 30px;
+  font-size: 1rem;
+}
+
   </style>
 </head>
 <body>
 
   <div class="hero-background">
-    <!--in a bid to have the same background image for the header and hero section, i wrapped the two blocks in a div-->
   <header>
-   <img src="./Images/logo.svg" alt="logo">
+   <img src="logo.svg" alt="logo">
     <button class="cta-btn">Try It Free</button></>
   </header>
 
@@ -168,7 +226,7 @@
       <p>Huddle re-imagines the way we build communities. Create genuine discussion and connect with your audience.</p>
       <button class="btn-pink">Get Started For Free</button>
     </div>
-    <img src="./Images/illustration-mockups.svg" alt="hero image">
+    <img src="illustration-mockups.svg" alt="hero image">
   </section>
   </div>
 
@@ -177,7 +235,7 @@
       <h2>Grow Together</h2>
       <p>Generate meaningful discussions with your audience and build a strong, loyal community.</p>
     </div>
-    <img src="./Images/illustration-grow-together.svg" alt="Grow Together">
+    <img src="illustration-grow-together.svg" alt="Grow Together">
   </section>
 
   <section class="card">
@@ -185,7 +243,7 @@
       <h2>Flowing Conversations</h2>
       <p>Our threads have just-in-time loading for a more natural flow of conversation.</p>
     </div>
-    <img src="./Images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
+    <img src="illustration-flowing-conversation.svg" alt="Flowing Conversations">
   </section>
 
   <section class="card">
@@ -193,7 +251,7 @@
       <h2>Your Users</h2>
       <p>It takes no time at all to integrate Huddle with your app’s authentication solution.</p>
     </div>
-    <img src="./Images/illustration-your-users.svg" alt="Your Users">
+    <img src="illustration-your-users.svg" alt="Your Users">
   </section>
 
   <section class="bottom-cta">
@@ -204,20 +262,19 @@
   <footer>
     <div class="footer-container">
     <div class="foot-img">
-      <img src="./Images/logo2.svg" alt="logo">
-      <!--this particular image was not in the package. i improvised on my own.-->
+      <img src="logo2.svg" alt="logo">
     </div>
     <div class="foot-con">
     <div class="foot">
-      <img src="./Images/icon-location.svg" alt="location">
+      <img src="icon-location.svg" alt="location">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="foot">
-      <img src="./Images/icon-phone.svg" alt="phone">
+      <img src="icon-phone.svg" alt="phone">
       <p>+1-543-123-4567</p>
     </div>
     <div class="foot">
-      <img src="./Images/icon-email.svg" alt="email">
+      <img src="icon-email.svg" alt="email">
       <p>example@huddle.com</p>
     </div>
     </div>
@@ -230,7 +287,6 @@
       <a href="#">Contact Us</a>
     </div>
     </div>
-    <p class="design">Designed by Isaiah A. ♥️</p>
   </footer>
 
 </body>
